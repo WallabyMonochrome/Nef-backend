@@ -1,0 +1,36 @@
+{
+  "name": "nef-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev --poll src/app.ts",
+    "build": "rimraf ./dist && npx tsc",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WallabyMonochrome/Nef-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WallabyMonochrome/Nef-backend/issues"
+  },
+  "homepage": "https://github.com/WallabyMonochrome/Nef-backend#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/jest": "^29.5.1",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "joi": "^17.9.2",
+    "node-json-db": "^2.2.0"
+  }
+}
